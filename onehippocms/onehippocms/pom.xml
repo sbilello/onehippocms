@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<groupId>org.onehippo</groupId>
+	<artifactId>assessment</artifactId>
+	<version>1.00.00</version>
+
+	<properties>
+		<hippo.repository.version>2.22.02</hippo.repository.version>
+		<javax.jcr.version>2.0</javax.jcr.version>
+		<slf4j.version>1.5.6</slf4j.version>
+		<hippo.forge.utilities>1.01.02</hippo.forge.utilities>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.github.stefanbirkner</groupId>
+			<artifactId>system-rules</artifactId>
+			<version>1.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.onehippo.forge.utilities</groupId>
+			<artifactId>hippo-utilities-hst</artifactId>
+			<version>${hippo.forge.utilities}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.onehippo.cms7.hst</groupId>
+			<artifactId>hst-api</artifactId>
+			<version>2.26.05</version>
+		</dependency>
+		<dependency>
+			<groupId>org.onehippo.cms7.hst</groupId>
+			<artifactId>hst-content-beans</artifactId>
+			<version>2.26.05</version>
+		</dependency>
+		<dependency>
+			<groupId>org.onehippo.cms7.hst</groupId>
+			<artifactId>hst-client</artifactId>
+			<version>2.26.05</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.jcr</groupId>
+			<artifactId>jcr</artifactId>
+			<version>${javax.jcr.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.onehippo.cms7</groupId>
+			<artifactId>hippo-repository-api</artifactId>
+			<version>${hippo.repository.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.onehippo.cms7</groupId>
+			<artifactId>hippo-repository-connector</artifactId>
+			<version>${hippo.repository.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jta_1.1_spec</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.1.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>hippo-maven2</id>
+			<name>Hippo Maven 2</name>
+			<url>http://maven.onehippo.com/maven2/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>hippo-forge</id>
+			<name>Hippo Forge maven 2 repository.</name>
+			<url>http://maven.onehippo.com/maven2-forge/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+
+</project>

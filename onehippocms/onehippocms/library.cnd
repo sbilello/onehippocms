@@ -1,0 +1,13 @@
+<'nt'='http://www.jcp.org/jcr/nt/1.0'>
+<'library'='http://www.example.org/library/nt/1.0'>
+
+[library:paragraph] > nt:base
+- library:text (string) mandatory
+[library:chapter] > nt:base
+- library:chapterName (string) mandatory
++ library:paragraph (library:paragraph) = library:paragraph multiple
+[library:book] > nt:base
+- library:bookTitle (string) mandatory
++ library:chapter (library:chapter) = library:chapter multiple
+[library:books] > nt:unstructured
++ library:book (library:book) = library:book multiple primary
